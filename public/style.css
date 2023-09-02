@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+}
+
+header {
+    text-align: center;
+    height: 100px;
+    background-color: cyan;
+}
+
+h3 {
+    margin-top: 2px;
+    text-align: center;
+}
+
+form {
+    width: 15%;
+    display: inline-block;
+    margin: 20px;
+}
+
+fieldset {
+    padding: 30px;
+}
+
+footer {
+    margin-top: 2px;
+    text-align: center;
+}

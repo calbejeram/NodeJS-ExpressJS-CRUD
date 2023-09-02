@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpressJS Routes and HTTP Protocols</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <header>
+        <h3>Fruits Inventory</h3>
+    </header>
+
+    <form action="/addFruits" method="POST">
+        <h2>Add new Fruit</h2>
+
+        <fieldset>
+            <label for="fruits_name">Fruit Name:</label>
+            <br>
+            <input
+            id="fruits_name"
+            name="fruits_name"
+            type="text"/>
+
+            <br>
+
+            <label for="instock">Stock:</label>
+            <br>
+            <input
+            id="instock"
+            name="instock" 
+            type="number"/>
+
+            <br>
+
+            <label for="unit_id">Unit of Measurement:</label>
+            <br>
+            <select name="unit_id" id="unit_id">
+                <option readonly>Select unit of measurements</option>
+                <option value="1">Kilogram</option>
+                <option value="2">Grams</option>
+                <option value="3">Pieces</option>
+                <option value="4">Pounds</option>
+                <option value="5">Box</option>
+                <option value="6">Sack</option>
+            </select>
+
+            <br>
+            <br>
+
+            <button id="btnSubmit" type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <form action="/searchFruits" method="POST">
+        <h2>Search fruit by ID:</h2>
+
+        <fieldset>
+            <label for="fruits_id">Enter fruit ID:</label>
+            <br>
+            <input id="fruits_id" name="fruits_id" type="number">
+            <br>
+            <button type="submit">Search</button>
+        </fieldset>
+    </form>
+
+    <form action="/updateFruits" method="POST">
+        <h2>Update Fruit</h2>
+        <fieldset>
+            <label for="fruits_id">Fruit ID:</label>
+            <br>
+            <input id="fruits_id" name="fruits_id" type="text">
+
+            <br>
+
+            <label for="fruits_name">New Fruit Name:</label>
+            <br>
+            <input id="fruits_name" name="fruits_name" type="text">
+
+            <br>
+
+            <button type="submit">Update</button>
+        </fieldset>
+    </form>
+
+    <form action="/deleteFruits" method="POST">
+        <h2>DeleteFruit</h2>
+        <fieldset>
+            <label for="fruits_id">Enter Fruit ID:</label>
+            <br>
+            <input id="fruits_id" name="fruits_id" type="text">
+
+            <br>
+
+            <button type="submit">Delete</button>
+        </fieldset>
+    </form>
+
+    <form action="/tableFruits" method="GET">
+        <h2>Show Data Table</h2>
+        <button type="submit">Show Data</button>
+    </form>
+</body>
+</html>
